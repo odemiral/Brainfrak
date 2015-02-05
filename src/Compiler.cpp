@@ -94,13 +94,10 @@ void Compiler::compile()
 			loopEnd(builder);
 			break;
 		case WHITESPACE:
-			cout << "whitespace!" << endl;
 			break;
 		case NEW_LINE:
-			cout << "new line!" << endl;
 			break;
 		case TAB:
-			cout << "Tab!" << endl;
 			break;
 		default:
 			cout << "Error Undefined Token " << token << endl;
