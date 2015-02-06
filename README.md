@@ -7,10 +7,10 @@ Developed in Linux, ported to Windows.
 Usage
 ---------
 You can either
+
 1. Pass the brainfuck code as an argument
 
     `BrainfuckJIT.exe ++++++++[>++++[>++>+++>+++>+<<<<-]>+>->+>>+[<]<-]>>.>>---.+++++++..+++.>.<<-.>.+++.------.--------.>+.>++.`
-
 2. Pass the path to the source using -f command.
 
     `BrainfuckJIT.exe -f path/to/file`
