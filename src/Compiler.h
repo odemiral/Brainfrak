@@ -1,3 +1,7 @@
+/*  Written By Onur Demiralay Dec 2014 - Jan 2015 MIT License
+ *  Github: @odemiral
+ *  Brainfuck compiler with JIT support written in C++11 using LLVM
+ */
 #pragma once
 
 #include <llvm\IR\IRBuilder.h>
@@ -9,9 +13,9 @@
 #include <llvm/ExecutionEngine/Interpreter.h>
 #include <llvm/ExecutionEngine/JIT.h>
 #include <llvm/ExecutionEngine/GenericValue.h>
+#include <llvm/Support/TargetSelect.h>
 
 #include <llvm/Support/raw_ostream.h>
-#include <llvm/Support/TargetSelect.h>
 
 #include <string>
 #include <iostream>

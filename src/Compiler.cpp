@@ -1,5 +1,8 @@
+/* Written By Onur Demiralay Dec 2014 - Jan 2015 MIT License
+*  Github: @odemiral
+*  Brainfuck compiler with JIT support written in C++11 using LLVM
+*/
 #include "Compiler.h"
-
 
 Compiler::Compiler(string brainFInput) :
 	m_context(llvm::getGlobalContext())
@@ -10,14 +13,15 @@ Compiler::Compiler(string brainFInput) :
 
 Compiler::Compiler(ifstream& bfFile) : m_context(llvm::getGlobalContext())
 {
-	void readFromFile(ifstream& bfFile);
+	readFromFile(bfFile);
 	initMembers();
 }
 
 /* read the contents of bfFile into bfInput */
 void Compiler::readFromFile(ifstream& bfFile)
 {
-	while (std::getline(bfFile, m_bfInput));
+	string temp((std::istreambuf_iterator<char>(bfFile)), std::istreambuf_iterator<char>());
+	m_bfInput = temp;
 }
 
 void Compiler::initMembers()

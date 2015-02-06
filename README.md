@@ -7,8 +7,12 @@ Developed in Linux, ported to Windows.
 Usage
 ---------
 You can either
-1. Pass the brainfuck code as a string
-2. Read it from a file then pass the ifstream to the compiler.
+1. Pass the brainfuck code as an argument
+
+    `BrainfuckJIT.exe ++++++++[>++++[>++>+++>+++>+<<<<-]>+>->+>>+[<]<-]>>.>>---.+++++++..+++.>.<<-.>.+++.------.--------.>+.>++.`
+2. Pass the path to the source using -f command.
+
+    `BrainfuckJIT.exe -f path/to/file`
 
 Dependencies
 --------------
