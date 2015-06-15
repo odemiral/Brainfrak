@@ -41,8 +41,8 @@ struct BFLoop
 };
 
 
-/* Brainfuck tokens with default vals, I tried to simply the tokens in expensve of accuracy, if you want accurate descriptions of
-* what each token do, check out http://en.wikipedia.org/wiki/Brainfuck#Commands
+/* Brainfuck tokens with default vals.
+* if you want a full descriptions of what each token do, check out http://en.wikipedia.org/wiki/Brainfuck#Commands
 */
 enum  BrainfuckTokens
 {
